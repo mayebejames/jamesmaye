@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lane = "en">
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+
+
+  
+  <!-- fetch the title & body fonts immediately to avoid re-rendering -->
+
+  <link rel="preload" as="style"      href="/static/css/default.css" />
+  <link rel="preload" href="/static/font/ssp/SourceSansPro-BASIC-Regular.ttf"          as="font" type="font/ttf" crossorigin="anonymous">
+  <link rel="preload" href="/static/font/ssp/SourceSansPro-BASIC-RegularItalic.ttf"    as="font" type="font/ttf" crossorigin="anonymous">
+  <link rel="preload" href="/static/font/ssp/SourceSansPro-BASIC-Semibold.ttf"         as="font" type="font/ttf" crossorigin="anonymous">
+  <link rel="preload" href="/static/font/ssfp/SourceSerifPro-BASIC-Bold.ttf"           as="font" type="font/ttf" crossorigin="anonymous">
+  <link rel="preload" href="/static/font/ssfp/SourceSerifPro-BASIC-Regular.ttf"        as="font" type="font/ttf" crossorigin="anonymous">
+  <link rel="preload" href="/static/font/ssfp/SourceSerifPro-BASIC-Semibold.ttf"       as="font" type="font/ttf" crossorigin="anonymous">
+  <link rel="preload" href="/static/font/ssfp/SourceSerifPro-BASIC-SemiboldItalic.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+  <link rel="preload" href="/static/font/ssfp/SourceSerifPro-BASIC-RegularItalic.ttf"  as="font" type="font/ttf" crossorigin="anonymous">
+  <link rel="preload" href="/static/font/ssfp/SourceSerifPro-BASIC-BoldItalic.ttf"     as="font" type="font/ttf" crossorigin="anonymous"> 
+  <!-- Full font CSS is loaded in footer. Here, inline only the minimal set of font CSS needed for initial screen, for speed: -->
+<style>
+  @font-face {
+      font-family: 'Source Serif Pro';
+      font-weight: 400;
+      font-style: normal;
+      src: url('/static/font/ssfp/SourceSerifPro-BASIC-Regular.ttf') format('truetype');
+      unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
+      font-display: swap
+  }
+  @font-face {
+      font-family: 'Source Serif Pro';
+      font-weight: 400;
+      font-style: italic;
+      src: url('/static/font/ssfp/SourceSerifPro-BASIC-RegularItalic.ttf') format('truetype');
+      unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
+      font-display: swap;
+  }
+  @font-face {
+      font-family: 'Source Serif Pro';
+      font-weight: 600;
+      font-style: normal;
+      src: url('/static/font/ssfp/SourceSerifPro-BASIC-Semibold.ttf') format('truetype');
+      unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
+      font-display: swap
+  }
+  @font-face {
+      font-family: 'Source Serif Pro';
+      font-weight: 700;
+      font-style: normal;
+      src: url('/static/font/ssfp/SourceSerifPro-BASIC-Bold.ttf') format('truetype');
+      unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
+      font-display: swap
+  }
+
+  @font-face {
+      font-family: 'Source Sans Pro';
+      font-weight: 400;
+      font-style: normal;
+      src: url('/static/font/ssp/SourceSansPro-BASIC-Regular.ttf') format('truetype');
+      unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
+      font-display: swap
+  }
+  @font-face {
+      font-family: 'Source Sans Pro';
+      font-weight: 400;
+      font-style: italic;
+      src: url('/static/font/ssp/SourceSansPro-BASIC-RegularItalic.ttf') format('truetype');
+      unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
+      font-display: swap
+  }
+  @font-face {
+      font-family: 'Source Sans Pro';
+      font-weight: 700;
+      font-style: normal;
+      src: url('/static/font/ssp/SourceSansPro-BASIC-Bold.ttf') format('truetype');
+      unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
+      font-display: swap
+  }
+  </style>
+ 
+
+  <meta name="author" content="James Maye" />
+  <meta name="title" content="$title$">
+
+  <link rel="stylesheet" type="text/css" href="/static/css/default.css" />
+  
+  <title>$title$ · James Maye</title>
+
+
+</head>
+
+
+
+<body>
+    <main>
+       
+<!-- Sidebar Goes here -->
+	 <div id="sidebar">
+     </div>
+<!-- End sidebar -->
+    	
+
+     <header id="top">
+         <h1>$title$</h1>
+     </header>
+
+     <article>
+<!-- Top matter start -->
+         <div id="page-metadata">
+             <p>
+                 <span id="page-description" title="Short summary of article."><em>$description$</em></span>
+                 <br/>
+                 <span id="tags" title="Tags list"><em>
+                     $for(tags)$<a href="/tags/$tags$">$tags$</a>$sep$, $endfor$
+                 </em></span>
+                 <br/>
+                 <span id="page-metadata-block">
+                     
+                     <!-- Date created - date modified -->
+                     <span id="page-date-range"><span id="page-creation" title="Date page contents were begun."><em>$created$</em></span> &ndash;  <!--endash with space either side--><span id="page-source"><a title="Link to latest revision of the raw Markdown text source for this page, '$title$': $url$.md" href="$url$.md"><span id="page-modified" title="Date of last major modification to this page."><em>$modified$</em></span></a></span></span>
+                     
+                     <span id="page-status" title="Status of current page: 'abandoned/notes/in progress/finished'"><em>$status$</em></span>
+                </span> <!-- page-metadata-block end-->     
+             </p>
+             <hr>
+         
+         </div> <!-- page-metadata end -->
+<!-- Top matter end -->
+         <div id="md-body">
+    
+$body$
+
+         </div> <!-- div id="md-body" -->
+    </article>
+
+</main>
+</body>
+</html>
+
+
+
