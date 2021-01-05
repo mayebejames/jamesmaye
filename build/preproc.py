@@ -1,8 +1,12 @@
 #!/usr/bin/env python3
 
-# NB: run from within folder containing md files
-import time
-start_time = time.time()
+""" 
+Preproc.py - a Pandoc preprocessor for jamesmaye.co.uk
+
+Script assumes it is run from the directory containing the copied markdown
+files to be edited"
+"""
+
 import os 
 import re
 
@@ -79,15 +83,15 @@ def fix_intralinks(text):
 
 
 def fix_wikilinks(text):
-    """Change [[Wiki Links]] to markdown [Wiki Links](wiki-links.html)
+    """Change [[Wiki Links]] to markdown [Wiki Links](wiki-links)
        with surrounding custom <span> class to allow custom styling
        of intrawebsite links.
     """
     
-    linked_text = re.sub(r'\[\[(.*?)\]\]', r"<span class='JM-link'>[\1](\1.html)</span>", text)
+    linked_text = re.sub(r'\[\[(.*?)\]\]', r"<span class='JM-link'>[\1](\1)</span>", text)
         # Matches [[wiklinks including spaces]], takes text within
         # brackets as group 1
-        # Then replaces with [group 1](group 1.html)
+        # Then replaces with [group 1](group 1)
 
     hyphen_linked_text =  re.sub(r"(\]\(.*?\))", 
         lambda m: m.group(1).replace(" ", "-").lower(), linked_text)
@@ -211,7 +215,7 @@ def create_tag_pages(target_directory, tags_dict):
         tag_page  = "{}.md".format(tag)
         body_text = ""
         for page in pages_list:
-            body_text += "-   [{0}](../{0}.html)\n".format(page)
+            body_text += "-   [{0}](../{0})\n".format(page)
         tag_text = YAML_text + body_text
         save_file(target_directory, tag_page, tag_text)
         
@@ -222,7 +226,7 @@ def create_tag_pages(target_directory, tags_dict):
 # --- Higher order, main etc. ---
 
 def main ():
-    folders = ['notes-preprocessed', 'notes-preprocessed/tags']
+    folders = ['.', 'tags']
     tags_dict = {}
     
     make_folder(folders)
@@ -245,4 +249,3 @@ def main ():
 if __name__ == "__main__":
     """ This is executed when run from the command line """
     main()  
-    print("--- %s seconds ---" % (time.time() - start_time))

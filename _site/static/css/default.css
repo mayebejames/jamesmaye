@@ -55,9 +55,9 @@
     font-display: swap;
 }
 
-/********/
-/* MAIN */
-/********/
+/*********/
+/* LAYOUT*/
+/*********/
 
 /* --- Constants independent of screen size --- */
 html {
@@ -74,38 +74,17 @@ body {
 }
 
 
-header h1{
-    margin-top: 0;
-    font-variant: small-caps;
-    text-align: center;
-    font-size: 40px;
-    line-height: 1.15;
-    font-weight: 600;
-    letter-spacing: -1px;
-}
-
-p {
-    line-height: 1.4;
-}
 
 
-/* Justified text, may need to add soft hyphens */
-#md-body p,
-#md-body li {
-	text-align: justify;
-	-webkit-hyphens: auto;
-	-ms-hyphens: auto;
-	hyphens: auto;
-}
 
 /**********************/
 /* RESPONSIVE DESIGN */
 /**********************/
 
 /* --- Mobile design/very small viewport --- */
-    /* Features: Sidenotes hidden, toggled inline. */
+    /* Features: Sidenotes hidde, toggled inline. */
     /* Horizontal margins 20px until main text width at 490px, then */
-    /* start to dynamically grow */
+    /* Start to dynamically grow */
     
 @media only screen and (max-width: 649px) {
     body {
@@ -135,6 +114,9 @@ p {
         }
         label {
                cursor: pointer;
+           }
+           label:hover {
+               color:gray;
            }
 
     /* END HIDE SIDENOTES, ADD TOGGLES */
@@ -170,7 +152,7 @@ p {
     */
     
     body {
-        margin: 0 20px;
+        margin: 40px 20px 0 20px;
     }
     
     main {
@@ -247,6 +229,9 @@ p {
 /*                   away from sidenote text. Recenter main with       */
 /*                   larger margins                                    */
         @media only screen and (min-width: 1170px) {
+            body {
+                max-width: 1130px; /* 650px main + 2x 240px sidenote columns */
+            }
             main{
                 margin-left: 240px;
                 margin-right: 240px;
@@ -259,13 +244,59 @@ p {
                 margin-left: -240px;
             }
             .sidenote:nth-of-type(even):before {
-                margin-left: -1em;
+                margin-left: -13px;
             }
             
         }
     }
     
 }
+/******************/
+/* ELEMENT STYLES */
+/******************/
+
+/*************/
+/* MAIN BODY */
+/*************/
+
+header h1{
+    margin-top: 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    line-height: 1.15;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+p {
+    line-height: 1.4;
+}
+
+
+/* Justified text, may need haskell preprocessing to add soft hyphens */
+#md-body p,
+#md-body li {
+	text-align: justify;
+	-webkit-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+}
+
+
+/* --- Links ---*/
+a:link {
+  color: black;
+}
+
+a:visited {
+  color:black;
+}
+
+a:hover, a:active{
+  color: #606060;
+}
+
 
 
 
@@ -321,7 +352,7 @@ p {
     content: counter(sidenote-counter) " ";
     font-size: 1em;
     top: -0.5rem;
-    margin-left: -1em;
+    margin-left: -13px;
 }
 
 blockquote .sidenote,
@@ -344,6 +375,7 @@ label.margin-toggle:not(.sidenote-number) {
 }
 
 
+
 /***********/
 /* FIGURES */
 /***********/
@@ -351,6 +383,66 @@ label.margin-toggle:not(.sidenote-number) {
 img {
   max-width: 100%;
 } 
+
+
+
+
+/**********/
+/* NAVBAR */
+/**********/
+
+#sidebar {
+    width: 100px;
+    float: left;
+    clear: left;
+    margin-left: -240px;
+}
+
+#sidebar img {
+    padding-bottom: 10px;
+}
+
+#sidebar a:hover img {
+    filter: invert(38%) sepia(7%) saturate(3%) hue-rotate(327deg) brightness(96%) contrast(96%);
+} 
+
+#sidebar-links a{
+    display:block;
+    font-variant: small-caps;
+    line-height: 1;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 8px;
+} 
+
+.sidebar-new {
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px dotted #aaa
+}
+
+
+
+/******************/
+/* METADATA BLOCK */
+/******************/
+
+#page-description {
+    font-size: 0.95rem;
+}
+
+#tags, #page-metadata-block {
+    font-size: 0.85rem;
+    text-transform: capitalize;
+}
+
+
+#page-metadata-block > span:not(:last-child)::after {
+    content: "\00B7";
+    display: inline-block;
+    margin: 0 0.35em 0 0.65em;
+}
     
 
 
