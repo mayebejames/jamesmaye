@@ -7,7 +7,7 @@
     font-family: "Source Serif Pro";
     font-weight: 400;
     font-style: normal;
-    src: url('/static/font/ssfp/SourceSerifPro-BASIC-Regular.ttf') format('truetype');
+    src: url('font/ssfp/SourceSerifPro-BASIC-Regular.ttf') format('truetype');
     unicode-range: U+0020-007E, U+00A0-00FF, U+2010, U+2013-2014, U+2018-2019, U+201C-201D, U+2212;
         font-display: swap;
 }
@@ -16,7 +16,7 @@
     font-family: "Source Serif Pro";
     font-weight: 400;
     font-style: italic; 
-    src: url('/static/font/ssfp/SourceSerifPro-BASIC-RegularItalic.ttf') format('truetype');
+    src: url('font/ssfp/SourceSerifPro-BASIC-RegularItalic.ttf') format('truetype');
     unicode-range: U+0020-007E, U+00A0-00FF, U+2010, U+2013-2014, U+2018-2019, U+201C-201D, U+2212;
     font-display: swap;
 }
@@ -25,7 +25,7 @@
     font-family: "Source Serif Pro";
     font-weight: 600;
     font-style: normal;
-    src: url('/static/font/ssfp/SourceSerifPro-BASIC-Semibold.ttf') format('truetype');
+    src: url('font/ssfp/SourceSerifPro-BASIC-Semibold.ttf') format('truetype');
     unicode-range: U+0020-007E, U+00A0-00FF, U+2010, U+2013-2014, U+2018-2019, U+201C-201D, U+2212;
     font-display: swap;
 }
@@ -33,7 +33,7 @@
     font-family: "Source Serif Pro";
     font-weight: 600;
     font-style: italic;
-    src: url('/static/font/ssfp/SourceSerifPro-BASIC-SemiboldItalic.ttf') format('truetype');
+    src: url('font/ssfp/SourceSerifPro-BASIC-SemiboldItalic.ttf') format('truetype');
     unicode-range: U+0020-007E, U+00A0-00FF, U+2010, U+2013-2014, U+2018-2019, U+201C-201D, U+2212;
     font-display: swap;
 }
@@ -42,7 +42,7 @@
     font-family: "Source Serif Pro";
     font-weight: 700;
     font-style: normal;
-    src: url('/static/font/ssfp/SourceSerifPro-BASIC-Bold.ttf') format('truetype');
+    src: url('font/ssfp/SourceSerifPro-BASIC-Bold.ttf') format('truetype');
     unicode-range: U+0020-007E, U+00A0-00FF, U+2010, U+2013-2014, U+2018-2019, U+201C-201D, U+2212;
     font-display: swap;
 }
@@ -50,7 +50,7 @@
     font-family: "Source Serif Pro";
     font-weight: 700;
     font-style: italic;
-    src: url('/static/font/ssfp/SourceSerifPro-BASIC-BoldItalic.ttf') format('truetype');
+    src: url('font/ssfp/SourceSerifPro-BASIC-BoldItalic.ttf') format('truetype');
     unicode-range: U+0020-007E, U+00A0-00FF, U+2010, U+2013-2014, U+2018-2019, U+201C-201D, U+2212;
     font-display: swap;
 }
@@ -124,6 +124,22 @@ body {
 
         
     /* -- sidebar/header to top of page css goes here */
+    #sidebar {
+        float: left;
+        clear: left;
+        margin-top: 7px;
+        
+    }
+    #sidebar img {
+        width: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 0px;
+    }    
+    #sidebar-links a{
+        display: none;
+        
+    }
     
     
     }  /* end of max-width 649px media query */
@@ -166,9 +182,34 @@ body {
         float: left;
         clear: left;
         margin-left: calc(((650px - 100vw) * 0.33) - (100px + 20px));
-        text-align: left; /*due to justify failing at small column size */
+        text-align: right; /*due to justify failing at small column size */
         font-size: 0.8rem; /* slightly smaller to reduce impact of smaller column */        
     }
+    #sidebar {
+        width: 100px;
+        float: left;
+        clear: left;
+        margin-left: calc(((650px - 100vw) * 0.33) - (100px + 20px));
+    }
+    #sidebar-links a{
+        display:block;
+        font-variant: small-caps;
+        line-height: 1;
+        text-decoration: none;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 8px;
+    }
+    .sidebar-new {
+        margin-top: 8px;
+        padding-top: 8px;
+        border-top: 1px dotted #aaa
+    }
+    #sidebar img {
+        width: 75px;;
+        padding-bottom: 10px;
+    }
+    
 
 
 /* --- Breakpoint: full width main text, grow L sidenotes --- */
@@ -181,6 +222,12 @@ body {
         .marginnote, .sidenote {
             width: calc(180px + 100vw - 890px); /*180px current sidenote size at vw = 890px */
             margin-left: calc(890px - 100vw - 200px); /*-200px L margin at vw + 890px */
+        }
+        #sidebar {
+            width: 100px;
+            float: left;
+            clear: left;
+            margin-left: calc(890px - 100vw - 200px);
         }
     }
  
@@ -196,6 +243,12 @@ body {
             max-width: 200px;
             margin-left: -220px;
             font-size: 0.85rem; /*slightly larger text as now 200px */
+        }       
+        #sidebar {
+            width: 100px;
+            float: left;
+            clear: left;
+            margin-left: -220px;
         }
     }
  
@@ -218,10 +271,14 @@ body {
             float: right;
             clear: right;
             margin-right: -220px; /* 200px width + 20px margin from text */
+            text-align: left;
         }
         
         .sidenote:nth-of-type(even):before {
             margin-left: 0;
+        }
+        #sidebar img{
+            width: 100px;
         }
 
 /* --- Breakpoint: FULL WIDTH VERSION: push R marginnote over 20px --- */
@@ -235,6 +292,12 @@ body {
             main{
                 margin-left: 240px;
                 margin-right: 240px;
+            }            
+            #sidebar {
+                width: 100px;
+                float: left;
+                clear: left;
+                margin-left: -240px;
             }
             .marginnote:nth-of-type(even), .sidenote:nth-of-type(even) {
                 margin-right: -240px;
@@ -266,13 +329,16 @@ header h1{
     font-size: 40px;
     line-height: 1.15;
     font-weight: 600;
-    letter-spacing: 2px;
+    letter-spacing: 5px;
 }
 
 p {
     line-height: 1.4;
 }
 
+sub {
+    font-size: 0.7rem;
+}
 
 /* Justified text, may need haskell preprocessing to add soft hyphens */
 #md-body p,
@@ -284,9 +350,12 @@ p {
 }
 
 
+
+
+
 /* --- Links ---*/
 a:link {
-  color: black;
+  color: black; /* rubricated: ?indiared, ?darker #922d2d? */
 }
 
 a:visited {
@@ -294,8 +363,9 @@ a:visited {
 }
 
 a:hover, a:active{
-  color: #606060;
+  color: #606060; /* rubricated: underline? color change? */
 }
+
 
 
 
@@ -343,9 +413,9 @@ a:hover, a:active{
 
 .sidenote-number:after {
     content: counter(sidenote-counter);
-    font-size: 1rem;
+    font-size: 0.8rem; /* Make slightly smaller to visually fit sup position */
     top: -0.5rem;
-    left: 0.1rem;
+    /*left: 0.1rem;*/
 }
 
 .sidenote:before {
@@ -391,21 +461,27 @@ img {
 /* NAVBAR */
 /**********/
 
+
+/* Replaced in responsive design 
 #sidebar {
     width: 100px;
     float: left;
     clear: left;
     margin-left: -240px;
 }
+*/
 
+/* replaced in responsive design
 #sidebar img {
     padding-bottom: 10px;
 }
+/*
 
 #sidebar a:hover img {
     filter: invert(38%) sepia(7%) saturate(3%) hue-rotate(327deg) brightness(96%) contrast(96%);
 } 
 
+/* moved to responsive section
 #sidebar-links a{
     display:block;
     font-variant: small-caps;
@@ -415,12 +491,15 @@ img {
     margin-right: 10px;
     margin-bottom: 8px;
 } 
+*/
 
+/* moved to responsive section
 .sidebar-new {
     margin-top: 8px;
     padding-top: 8px;
     border-top: 1px dotted #aaa
 }
+/*
 
 
 
@@ -443,6 +522,6 @@ img {
     display: inline-block;
     margin: 0 0.35em 0 0.65em;
 }
-    
+
 
 
