@@ -61,8 +61,8 @@ def remove_H1(text):
        Setext-style headers not supported.
     """
     
-    new_text = re.sub("^#\s.*\n\n", "", text) 
-               # Regex: match start of doc, single #, space, text, two newlines
+    new_text = re.sub("^#\s.*\n", "", text) 
+               # Regex: match start of doc, single #, space, text, one newline
     return(new_text)
 
 
