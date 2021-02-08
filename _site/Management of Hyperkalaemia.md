@@ -1,10 +1,11 @@
+# Management of Hyperkalaemia
 
 ---
 title: management of hyperkalaemia
 description: Pocket guide for summary of Hyperkalaemia, or acutely raised serum potassium levels
 created: 05-01-20
 modified: 05-01-20
-tags: pocket-guide, electrolytes, management
+tags: [pocket-guide, electrolytes, management]
 status: in progress
 url: management-of-hyperkalaemia
 ---
@@ -20,7 +21,7 @@ url: management-of-hyperkalaemia
 	* 6.0 - 6.4 with or without ECG changes
 	* Oral or IV management
 * Severe hyperkalaemia
-	* \>6.5  or >5.9 with major symptoms or ECG changes
+	* >6.5  or >5.9 with major symptoms or ECG changes
 	* IV management then oral management once stabilised
 		* 1) Calcium gluconate 10% 30ml
 			* Over 3-10 (30mins if on digoxin) mins into large vein with ECG telemetry by a doctor
@@ -30,7 +31,7 @@ url: management-of-hyperkalaemia
 			* Risk of hypoglycaemia - monitor BMs every 30 mins for 2 hrs then hourly until 6 hours - will require 10% glucose infusion if so 
 			* Lasts 60 minutes - check VBG at 1, 2, 4, 6, 24 hrs
 
-If Hyperkalaemia is resistant to treatment discuss urgently with renal team as patient may require renal replacement therapy (<span class='JM-link'>[Dialysis](dialysis)</span>)
+If Hyperkalaemia is resistant to treatment discuss urgently with renal team as patient may require renal replacement therapy ([[Dialysis]])
 
 
 ## Symptoms of Hyperkalaemia

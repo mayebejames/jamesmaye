@@ -4,7 +4,7 @@ title: Leptospirosis
 description: Leptospirosis is a bacterial infection caught from contaminated freshwater. It can develop into Weil's disease and cause multi-organ failure. It is treated best with penicillins.
 created: 02-11-20
 modified: 29-12-20
-tags: medicine, disease, infectious disease, bacteria
+tags: [medicine, disease, infectious-disease, bacteria]
 status: in progress
 url: leptospirosis
 ---

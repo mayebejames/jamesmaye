@@ -181,17 +181,20 @@ def extract_tags(text):
 
 def update_tags_dict(dict, file, text):
     """Creates dictionary with each tag a key and each value a list of
-       page stitles containing that tag.
+       pages containing that tag, each containing a tuple of (title, filename).
        If unable to extract page title, falls back to filename
     """
     
     title = extract_title(file, text)
     tags = extract_tags(text)
+    
+    # di
+    file_tuple = (title, file[:-3])  # Removes the '.md'
     for tag in tags:
         if tag in dict:
-            dict[tag].append(title)
+            dict[tag].append(file_tuple)
         else:
-            dict[tag] = [title]
+            dict[tag] = [file_tuple]
     return(dict)
         
 
@@ -211,11 +214,11 @@ def create_tag_pages(target_directory, tags_dict):
     
     for tag, pages_list in tags_dict.items(): #i.e. for k,v in dict
         # .items() is required to iterate through dict containing list
-        YAML_text = "---\ntitle: {}\n---\n\n".format(tag)
+        YAML_text = "---\ntitle: Tag:{}\n---\n\n## Articles\n\n".format(tag)
         tag_page  = "{}.md".format(tag)
         body_text = ""
         for page in pages_list:
-            body_text += "-   [{0}](../{0})\n".format(page)
+            body_text += "-   [{0}](/{1})\n".format(page[0], page[1])
         tag_text = YAML_text + body_text
         save_file(target_directory, tag_page, tag_text)
         
@@ -226,7 +229,7 @@ def create_tag_pages(target_directory, tags_dict):
 # --- Higher order, main etc. ---
 
 def main ():
-    folders = ['.', 'tags']
+    folders = ['../md', 'tags']
     tags_dict = {}
     
     make_folder(folders)
