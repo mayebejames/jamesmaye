@@ -39,8 +39,8 @@ def save_file(target_directory, file_name, file_contents):
 
 
 def fix_filename(file):
-    """Remove any spaces from file name, replace with hyphens"""
-    return file.replace(' ', '-')
+    """Remove any spaces from file name, replace with hyphens, make lowercase"""
+    return file.replace(' ', '-').lower()
 
 
 def make_folder(folder_paths):
