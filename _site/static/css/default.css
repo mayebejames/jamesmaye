@@ -193,7 +193,7 @@ html {
 /******************/
 
 /*************/
-/* MAIN BODY */
+/*   TEXT    */
 /*************/
 
 header h1{
@@ -205,12 +205,31 @@ header h1{
     letter-spacing: 5px;
 }
 
+h2 {
+    font-weight: 600;
+    font-size: 22px;
+    margin-top: 3rem;
+    margin-bottom: 14px;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 3rem;
+    margin-bottom: 14px;
+}
+
 p {
     line-height: 1.4;
+
 }
 
 sub {
     font-size: 0.7rem;
+}
+
+strong {
+    font-weight: 600;
 }
 
 /* Justified text, may need haskell preprocessing to add soft hyphens */
@@ -221,6 +240,10 @@ sub {
 	-ms-hyphens: auto;
 	hyphens: auto;
 }
+
+/******************/
+/* ELEMENT STYLES */
+/******************/
 
 hr {
     border-top: 1px solid black;
@@ -237,8 +260,15 @@ a:visited {
   color:black;
 }
 
-a:hover, a:active{
-  color: #606060; /* rubricated: underline? color change? */
+a:hover{
+	background-size: cover;
+	background: #F9F3E9;
+
+	transition-property: background;
+	transition-duration: 0.2s;
+
+	border-radius: 4px;
+    color: black;
 }
 
 
@@ -367,7 +397,7 @@ img {
 
 #navbar div a:hover {
     	background-size: cover;
-    	background: #f2f2f2;
+    	background: #FBF7F0;
 	
     	transition-property: background;
     	transition-duration: 0.2s;
@@ -405,7 +435,7 @@ img {
 
 
 table {
-    width: 100% !important; /*overrides the html style width by pandoc */
+    width: 100% !important;
     font-size: 0.9rem;
 }
 
