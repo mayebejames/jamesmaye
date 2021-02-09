@@ -13,23 +13,31 @@ url: management-of-hyperkalaemia
 
 ## Acute Management
 
-* Mild hyperkalaemia
-	* <5.9, no major symptoms or ECG changes
-	* Oral management
-		* Calcium resonium 15g TDS/QDS  (with 10ml BD lactulose) until K+ 5.5 mmol/L
-* Moderate hyperkalaemia
-	* 6.0 - 6.4 with or without ECG changes
-	* Oral or IV management
-* Severe hyperkalaemia
-	* >6.5  or >5.9 with major symptoms or ECG changes
-	* IV management then oral management once stabilised
-		* 1) Calcium gluconate 10% 30ml
-			* Over 3-10 (30mins if on digoxin) mins into large vein with ECG telemetry by a doctor
-			* ECG after 10 mins - repeat bolus if not normalised
-		* 2) Actrapid 10u in 100-125mls 20% glucose
-			* Over 15-30 mins to temporarily lower levels, repeat if necessary
-			* Risk of hypoglycaemia - monitor BMs every 30 mins for 2 hrs then hourly until 6 hours - will require 10% glucose infusion if so 
-			* Lasts 60 minutes - check VBG at 1, 2, 4, 6, 24 hrs
+
+--------------- ------------------------- --------
+Mild            <5.9 mmol/L,              Oral
+Hyperkalaemia   no major symptoms or
+                ECG changes
+
+Moderate        6.0--6.4 mmol/L with       Oral or
+Hyperkalaemia   or without ECG changes    IV
+
+Severe          \>6.5 mmol/L or           IV then
+Hyperkalaemia   major symptoms or ECG     oral
+                changes if \>5.9 mmol/L
+--------------- ------------------------- --------
+
+
+* Oral management
+    * Calcium resonium 15g TDS/QDS  (with 10ml BD lactulose) until K+ 5.5 mmol/L
+* IV management then oral management once stabilised
+    1) Calcium gluconate 10% 30ml
+        * Over 3-10 (30mins if on digoxin) mins into large vein with ECG telemetry by a doctor
+		* ECG after 10 mins - repeat bolus if not normalised
+    2) Actrapid 10u in 100-125mls 20% glucose
+        * Over 15-30 mins to temporarily lower levels, repeat if necessary
+		* Risk of hypoglycaemia - monitor BMs every 30 mins for 2 hrs then hourly until 6 hours - will require 10% glucose infusion if so 
+		* Lasts 60 minutes - check VBG at 1, 2, 4, 6, 24 hrs
 
 If Hyperkalaemia is resistant to treatment discuss urgently with renal team as patient may require renal replacement therapy ([[Dialysis]])
 

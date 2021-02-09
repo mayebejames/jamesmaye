@@ -405,7 +405,7 @@ img {
 
 
 table {
-    width: 100%;
+    width: 100% !important; /*overrides the html style width by pandoc */
     font-size: 0.9rem;
 }
 
