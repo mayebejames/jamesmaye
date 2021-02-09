@@ -69,28 +69,39 @@ html {
 
 }
 
-body {  
-    font-size: 17px;
+body { 
+    margin: 0 20px;
 }
 
 
 
+/*************/
+/* FONT SIZE */
+/*************/
 
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    body {
+        font-size: 18px;
+    }
+}
 
 /**********************/
 /* RESPONSIVE DESIGN */
 /**********************/
 
 /* --- Mobile design/very small viewport --- */
-    /* Features: Sidenotes hidde, toggled inline. */
+    /* Features: Sidenotes hidden, toggled inline. */
     /* Horizontal margins 20px until main text width at 490px, then */
     /* Start to dynamically grow */
-    
-@media only screen and (max-width: 649px) {
-    body {
-        margin: 0 20px;
-    }
-    
+
+
+@media only screen and (max-width: 1069px) {    
     /* HIDE SIDENOTES, ADD TOGGLES */
     label.margin-toggle:not(.sidenote-number) {
             display: inline;
@@ -140,180 +151,51 @@ body {
         display: none;
         
     }
+    } /* END max-width 1129px */    
     
-    
-    }  /* end of max-width 649px media query */
 
 
-
-/* --- Breakpoint: 1st sidebar --- */
-/* Features: half-width sidebar , main text area growing to full size */ 
 @media only screen and (min-width: 650px) {
-    /* Value definitions: 
-    body margins left/right: 20px
-    main body text width:
-        490px minimum
-        for each additional viewport pixel, gains 67%
-            (100vw - 650px[i.e. current viewport]) * 0.67
-    sidenote width:
-        100px minimum width
-        for each additional viewport pixel, gains 33%
-            (100vw - 650px[i.e. current viewport]) * 0.33
-    
-    sidenote left margin:
-        negative, pulls sidenote to the left (signs of calc reversed from 
-        sidenote width)
-        20px greater than sidenote width to add 20px margin from main
-        text
+    /* main body text min-width 490px, each extra px shared out between
+    main, left and right margins
     */
-    
-    body {
-        margin: 40px 20px 0 20px;
-    }
-    
+
     main {
-        max-width: calc(490px + ((100vw - 650px) * 0.67));
-        margin-left: auto; /* = 120px + (33vw - 125px) */
-        margin-right: 0;
+        max-width: calc(490px + ((100vw - 650px) * 0.33));
+        margin-left: auto;
+        margin-right: auto;
     }
-    
+}
+
+/* --- Breakpoint: sidebars, 180px wide --- */
+@media only screen and (min-width: 1070px) {
     .marginnote, .sidenote{
-        width: calc(100px + ((100vw - 650px) * 0.33));
+        width: 180px; /*calc(180px + ((100vw - 1070px) * 0.33));*/
         float: left;
         clear: left;
-        margin-left: calc(((650px - 100vw) * 0.33) - (100px + 20px));
+        margin-left: max(-220px, calc(((1070px - 100vw) * 0.33) - (180px + 20px)));
         text-align: right; /*due to justify failing at small column size */
-        font-size: 0.8rem; /* slightly smaller to reduce impact of smaller column */        
+       
     }
-    #sidebar {
-        width: 100px;
-        float: left;
-        clear: left;
-        margin-left: calc(((650px - 100vw) * 0.33) - (100px + 20px));
-    }
-    #sidebar-links a{
-        display:block;
-        font-variant: small-caps;
-        line-height: 1;
-        text-decoration: none;
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-bottom: 8px;
-    }
-    .sidebar-new {
-        margin-top: 8px;
-        padding-top: 8px;
-        border-top: 1px dotted #aaa
-    }
-    #sidebar img {
-        width: 75px;;
-        padding-bottom: 10px;
-    }
-    
-
-
-/* --- Breakpoint: full width main text, grow L sidenotes --- */
-    @media only screen and (min-width: 890px) { 
-        /* at 890px main width = 650px, the max width of the body text */
-        main {
-            max-width: 650px;
-            margin-left: auto;
-        }
-        .marginnote, .sidenote {
-            width: calc(180px + 100vw - 890px); /*180px current sidenote size at vw = 890px */
-            margin-left: calc(890px - 100vw - 200px); /*-200px L margin at vw + 890px */
-        }
-        #sidebar {
-            width: 100px;
-            float: left;
-            clear: left;
-            margin-left: calc(890px - 100vw - 200px);
-        }
-    }
- 
-    
-/* --- Breakpoint: full width main text & L sidenotes, grow R margin --- */
-    @media only screen and (min-width: 910px) {
-        /* at 910px the L sidenotes = 200px, the max sidebar width */
-        main {
-            margin-left: 220px;
-            margin-right: auto; /* start growing R margin */
-        }
-        .marginnote, .sidenote {
-            max-width: 200px;
-            margin-left: -220px;
-            font-size: 0.85rem; /*slightly larger text as now 200px */
-        }       
-        #sidebar {
-            width: 100px;
-            float: left;
-            clear: left;
-            margin-left: -220px;
-        }
-    }
- 
-    
-/* --- Breakpoint: add 2nd (R) sidenote column, centre body  --- */ 
-    @media only screen and (min-width: 1130px) {
-    /* At 1130px body margins 20px, L & R sidenote margins 220px, 
-    main 650px */
-        body {
-            max-width: 1090px; /* 650px main + 2x 220px sidenote columns */
-            margin-left: auto;
-            margin-right: auto;
-        }
-        main {
-            margin-right: 220px;
-            margin-left: 220px;
-        }
-        .marginnote:nth-of-type(even), .sidenote:nth-of-type(even) {
-            /* Alternate left/right sidenotes within each paragraph */
-            float: right;
-            clear: right;
-            margin-right: -220px; /* 200px width + 20px margin from text */
-            text-align: left;
-        }
-        
-        .sidenote:nth-of-type(even):before {
-            margin-left: 0;
-        }
-        #sidebar img{
-            width: 100px;
-        }
-
-/* --- Breakpoint: FULL WIDTH VERSION: push R marginnote over 20px --- */
-/*                   to allow sidenote no. to be pushed out left       */
-/*                   away from sidenote text. Recenter main with       */
-/*                   larger margins                                    */
-        @media only screen and (min-width: 1170px) {
-            body {
-                max-width: 1130px; /* 650px main + 2x 240px sidenote columns */
-            }
-            main{
-                margin-left: 240px;
-                margin-right: 240px;
-            }            
-            #sidebar {
-                width: 100px;
-                float: left;
-                clear: left;
-                margin-left: -240px;
-            }
-            .marginnote:nth-of-type(even), .sidenote:nth-of-type(even) {
-                margin-right: -240px;
-            }
-            
-            .marginnote:nth-of-type(odd), .sidenote:nth-of-type(odd) {
-                margin-left: -240px;
-            }
-            .sidenote:nth-of-type(even):before {
-                margin-left: -13px;
-            }
-            
-        }
+    .marginnote:nth-of-type(even), .sidenote:nth-of-type(even) {
+        /* Alternate left/right sidenotes within each paragraph */
+        float: right;
+        clear: right;
+        margin-left: 0;
+        margin-right: max(-220px, calc(((1070px - 100vw) * 0.33) - (180px + 20px)));
+        text-align: left;
     }
     
 }
+
+@media only screen and (min-width: 1130px) {
+    main {
+        max-width: 650px;
+    }
+}
+
+
+
 /******************/
 /* ELEMENT STYLES */
 /******************/
@@ -323,7 +205,6 @@ body {
 /*************/
 
 header h1{
-    margin-top: 0;
     text-transform: uppercase;
     text-align: center;
     font-size: 40px;
@@ -349,7 +230,9 @@ sub {
 	hyphens: auto;
 }
 
-
+hr {
+    border-top: 1px solid black;
+}
 
 
 
@@ -396,9 +279,9 @@ a:hover, a:active{
 .marginnote {
     margin-top: 0.3rem;
     margin-bottom: 0;
-    line-height: 1.3;
     vertical-align: baseline;
     position: relative;
+    font-size: 0.8rem; /* slightly smaller to reduce impact of smaller column */ 
 }
 
 .sidenote-number {
@@ -422,7 +305,7 @@ a:hover, a:active{
     content: counter(sidenote-counter) " ";
     font-size: 1em;
     top: -0.5rem;
-    margin-left: -13px;
+    margin-left: -10px;
 }
 
 blockquote .sidenote,
@@ -499,9 +382,46 @@ img {
     padding-top: 8px;
     border-top: 1px dotted #aaa
 }
-/*
+*/
+#navbar {
+    display: flex;
+    border-bottom: 1px solid gray;
+    flex-wrap: nowrap;
+    height: 50px;
+}
 
+#navbar div {
+    display: block;
+    flex-grow: 1;
+    text-align: center;
 
+}
+
+#navbar > div+div {
+    border-left: 1px solid rgba(100, 100, 100, 0.3);
+}
+
+#navbar div a {
+    text-decoration: none;
+    display: block;
+    width:100%;
+    height:100%;
+    line-height: 50px;
+    color: #707070;
+
+}
+
+#navbar div a:hover {
+    	background-size: cover;
+    	background: #f2f2f2;
+	
+    	transition-property: background;
+    	transition-duration: 0.2s;
+
+    	border-radius: 4px;
+        color: black;
+    
+}
 
 /******************/
 /* METADATA BLOCK */
