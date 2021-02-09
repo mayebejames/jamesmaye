@@ -78,18 +78,10 @@ body {
 /*************/
 /* FONT SIZE */
 /*************/
-
-@media only screen and (max-width: 600px) {
-    body {
-        font-size: 16px;
-    }
+html {
+    font-size: 18px;
 }
 
-@media only screen and (min-width: 601px) {
-    body {
-        font-size: 18px;
-    }
-}
 
 /**********************/
 /* RESPONSIVE DESIGN */
@@ -281,7 +273,7 @@ a:hover, a:active{
     margin-bottom: 0;
     vertical-align: baseline;
     position: relative;
-    font-size: 0.8rem; /* slightly smaller to reduce impact of smaller column */ 
+    font-size: 0.75em; /* slightly smaller to reduce impact of smaller column */ 
 }
 
 .sidenote-number {
@@ -345,44 +337,6 @@ img {
 /**********/
 
 
-/* Replaced in responsive design 
-#sidebar {
-    width: 100px;
-    float: left;
-    clear: left;
-    margin-left: -240px;
-}
-*/
-
-/* replaced in responsive design
-#sidebar img {
-    padding-bottom: 10px;
-}
-/*
-
-#sidebar a:hover img {
-    filter: invert(38%) sepia(7%) saturate(3%) hue-rotate(327deg) brightness(96%) contrast(96%);
-} 
-
-/* moved to responsive section
-#sidebar-links a{
-    display:block;
-    font-variant: small-caps;
-    line-height: 1;
-    text-decoration: none;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 8px;
-} 
-*/
-
-/* moved to responsive section
-.sidebar-new {
-    margin-top: 8px;
-    padding-top: 8px;
-    border-top: 1px dotted #aaa
-}
-*/
 #navbar {
     display: flex;
     border-bottom: 1px solid gray;
@@ -428,11 +382,11 @@ img {
 /******************/
 
 #page-description {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
 }
 
 #tags, #page-metadata-block {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     text-transform: capitalize;
 }
 
@@ -443,5 +397,30 @@ img {
     margin: 0 0.35em 0 0.65em;
 }
 
+/**********/
+/* TABLES */
+/**********/
+
+/* Tufte-style design adapted from cookingtimes.info */
+
+
+table {
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+table th {
+    text-align: left;
+    font-family: "Gill Sans","Gill Sans MT",Calibri,sans-serif;
+    letter-spacing: .03em;
+    font-weight: normal;
+    font-size: small;
+    padding-bottom: 0.5rem;
+    white-space: nowrap
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #FBF7F0
+}
 
 
