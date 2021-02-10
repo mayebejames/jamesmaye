@@ -235,10 +235,13 @@ strong {
 /* Justified text, may need haskell preprocessing to add soft hyphens */
 #md-body p,
 #md-body li {
-	text-align: justify;
 	-webkit-hyphens: auto;
 	-ms-hyphens: auto;
 	hyphens: auto;
+}
+
+#md-body p {
+    text-align: justify;
 }
 
 /******************/
