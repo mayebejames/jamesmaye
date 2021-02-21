@@ -122,7 +122,7 @@ def create_sidenotes(text):
                     # at least 1 alphanum, space or dash char
     if sidenote_keys:
         for key in sidenote_keys:
-            regex_sidenote = r"\[\^{0}\]:\s(.*?):\[\^{0}\]".format(key)
+            regex_sidenote = r"\[\^{0}\]:\s*(.*?):\s*\[\^{0}\]".format(key)
             sidenote_text = re.findall(regex_sidenote, text, re.DOTALL)
             if sidenote_text:
                 html = ('<label for="{0}" '
