@@ -517,6 +517,8 @@ input[type="checkbox"] {
 
 .collapsibletable span {
     float: left;
+    max-width: calc(100% - 125px); /* stops the 'click to collapse'
+        shifting to next line on smaller screen widths. 125px covers the click          to collapse span */ 
 }
 
 .collapsibletable span+span {
