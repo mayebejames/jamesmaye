@@ -148,8 +148,6 @@ main {
         }
         label {
             cursor: pointer;
-            text-decoration: underline 1px dotted;
-
            }
            
         label:hover {
@@ -162,6 +160,9 @@ main {
            	border-radius: 4px;
             color: black;
            }
+        .sidenote-number:after {
+            text-decoration: underline; /*to visually make clickable numbers look like links */
+        }
 
     /* END HIDE SIDENOTES, ADD TOGGLES */
 } /* END max-width 1069px */    
@@ -218,15 +219,16 @@ header h1{
 h2 {
     font-weight: 600;
     font-size: 22px;
-    margin-top: 3rem;
-    margin-bottom: 14px;
+    margin-top: 40px;  /* per Butterick, use vertical distance to show thematic distance */
+    margin-bottom: 18px; /* to match paragraphs */
 }
 
 h3 {
-    font-weight: 600;
+    font-weight: 400;
     font-size: 20px;
-    margin-top: 3rem;
-    margin-bottom: 14px;
+    margin-top: 40px;
+    margin-bottom: 18px;
+    font-style: italic;  /* with normal weight, to differentiate from h2 */
 }
 
 p {
@@ -349,9 +351,9 @@ hr {
 
 .sidenote:before {
     content: counter(sidenote-counter) " ";
-    font-size: 1em;
-    top: -0.5rem;
-    margin-left: -10px;
+    font-size: 0.95em;
+    top: -0.4rem;
+    margin-left: -9px;
 }
 
 blockquote .sidenote,
@@ -460,15 +462,16 @@ img {
 
 table {
     width: 100% !important;
-    font-size: 0.9rem;
     margin-bottom: 26px;
     font-family: "Gill Sans","Gill Sans MT",Calibri,sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.01em;
 }
 
 table th {
     text-align: left;
     font-family: "Gill Sans","Gill Sans MT",Calibri,sans-serif;
-    letter-spacing: .03em;
+    letter-spacing: 0.03em;
     font-weight: normal;
     font-size: small;
     padding-bottom: 0.5rem;
@@ -514,8 +517,6 @@ input[type="checkbox"] {
 
 .collapsibletable span {
     float: left;
-    
-    border-bottom: 1px dashed gray;
 }
 
 .collapsibletable span+span {
