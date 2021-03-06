@@ -15,7 +15,7 @@ Chromosome abnormalities confer particular prognostic significance. For example,
 
 Chromosome abnormalities can also be used as a marker of disease, and a sign of relapse. The abnormal DNA sequence signal can be amplified using PCR, making this a much more sensitive test in detecting residual leukaemia than through cytology. 
 
-
+```
 -------------------------------------------------------------
 Chromosome abnormality  Condition
 ----------------------  -------------------------------------
@@ -31,7 +31,7 @@ t(8;21)                 AML with some differentiation (M2)
 Hyperdiploidy           Childhood ALL: better prognosis 
 (>47 chromosomes)                       
 
-t(8;14)                [[Burkitt lymphoma]]
+t(8;14)                Burkitt lymphoma
 
 5q-                    Loss of long arm of Ch. 5.
                        Myelodysplastic syndrome (refractory 
@@ -41,5 +41,6 @@ t(8;14)                [[Burkitt lymphoma]]
 t(14;18)              Follicular Non-Hodgkin lymphoma -- seen
                       in 75% of cases. 
 -------------------------------------------------------------
+```
 
 <!-- {BearID:10536D95-6F42-4BCE-B686-6680ADB7BA7A-1211-0000EA9C2D4AB6E3} -->

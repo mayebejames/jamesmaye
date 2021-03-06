@@ -1,7 +1,7 @@
 # Chronic Myeloid Leukaemia
 ---
 title: Chronic Myeloid Leukaemia
-description: CML is a haematological malignancy characterised by the BCR-ABL fusion protein produced by the Philadelphia chromosome. It is usually diagnosed in middle age. With chemotherapy such as the imatinib, more than 70% of patients survive beyond 5 years from diagnosis. 
+description: CML is a haematological malignancy characterised by the BCR-ABL fusion protein produced by the Philadelphia chromosome. It is usually diagnosed in middle age. With chemotherapy such as imatinib, more than 70% of patients survive beyond 5 years from diagnosis. 
 created: 27/02/2021
 modified: 27/02/2021
 tags: [medicine, haematology, disease, cancer, leukaemia]
@@ -14,12 +14,12 @@ Chronic myeloid leukaemia (CML) is a myeloproliferative disorder and [[Haematolo
 
 ## Epidemiology
 
-CML is a rare disease, with a frequency of 1.25 per 100,000; it accounts for 15% of all adult leukaemias.  It is a disease of middle age; patients usually present around their 50s. CML is more common in females than males. Environmental risk factors in clude previous exposure to radiation. 
+CML is a rare disease, with a frequency of 1.25 per 100,000; it accounts for 15% of all adult leukaemias.  It is a disease of middle age; patients usually present around their 50s. CML is more common in females than males. Environmental risk factors include previous exposure to radiation. 
 
 
 ## Aetiology
 
-For the vast majority of patients, the aetiology of CML is completely unknown. The only epidemiological risk factor identified is exposure to radiation.  The BCR-ABL fusion protein produced by the t(9;22) Philadelphia chromosome translocation appears to be a universal causative agent in CML. 95% of cases are found to have the Philadelphia chromosome, while the remaining 5% are thought to have other genetic abnormalities producing the BCR-ABL fusion gene without the classic 9;22 translocation.  The resultant BCR-ABL fusion protein is a potent tyrosine kinase. It has been shown both _in vitro_ and _in vivo_ to transform haematopoietic progenitor cells, blocking apopotosis, increasing proliferation and altering differentiation. 
+For the vast majority of patients, the aetiology of CML is completely unknown. The only epidemiological risk factor identified is exposure to radiation.  The BCR-ABL fusion protein produced by the t(9;22) Philadelphia chromosome translocation appears to be a universal causative agent: 95% of cases are found to have the Philadelphia chromosome, while the remaining 5% are thought to have other genetic abnormalities producing the BCR-ABL fusion gene without the classic 9;22 translocation.  The resultant BCR-ABL fusion protein is a potent tyrosine kinase. It has been shown both _in vitro_ and _in vivo_ to transform haematopoietic progenitor cells, blocking apopotosis, increasing proliferation and altering differentiation. 
 
 
 ## Clinical Features
@@ -40,37 +40,60 @@ CML is considered to have three distinct phases: a baseline Chronic Phase; Accel
 
 The accelerated phase is generally brief, before transformation to blast crisis. It is characterised by increasing blood counts and organomegaly becoming increasingly resistant to therapy. Blasts constitute 10-19% of all white blood cells or bone marrow nucleated cells. Marked by the acquisition of new cytogenetic abnormalities in majority of patients. 
 
-Table 1. WHO criteria for accelerated phase
-
-----------------------------------------------------------------------------
-Blasts 10--19% of WBCs in peripheral blood or nucleated bone marrow cells
-
-Peripheral blood basophils ≥20%
-
-Persistent thrombocytopenia (<100 x10^9^/L) or thrombocytosis (>1000 x10^9^) resistant to treatment
-
-↑Spleen size and ↑WCC unresponsive to treatment
-
-Cytogenetic evidence of clonal evolution 
-----------------------------------------------------------------------------
-
+<div class="collapsibletable">
+  <input type="checkbox" />
+ <span class="tabletitle">Table 1. WHO criteria for accelerated phase</span><span>Click to expand &#9666;</span><span>Click to collapse &#9662;</span><div class ="tbinner"></div>
+  <table class="collapsible">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Blasts 10–19% of WBCs in peripheral blood or nucleated bone marrow cells</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Peripheral blood basophils ≥20%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Persistent thrombocytopenia (&lt;100 x10<sup>9</sup>/L) or thrombocytosis (&gt;1000 x10<sup>9</sup>) resistant to treatment</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">↑Spleen size and ↑WCC unresponsive to treatment</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Cytogenetic evidence of clonal evolution</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 Blast crisis resembles acute leukaemia: it is rapidly fatal, with more than 20% blasts or promyelocytes in the blood or bone marrow. Myeloid blast crises are associated with cells acquiring further copies of the Philadelphia chromosome.
 
-Table 2. WHO criteria for blast crisis
+<div class="collapsibletable">
+  <input type="checkbox" />
+ <span class="tabletitle">Table 2. WHO criteria for blast crisis</span><span>Click to expand &#9666;</span><span>Click to collapse &#9662;</span><div class ="tbinner"></div>
+  <table class="collapsible">
 
------------------------------------------------------------------------
-Blasts  ≥20% of WBCs in peripheral blood or nucleated bone marrow cells
-
-Extramedullary blast proliferation
-
-Large foci or clusters of blasts in the bone marrow biopsy
------------------------------------------------------------------------
-
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Blasts ≥20% of WBCs in peripheral blood or nucleated bone marrow cells</td>
+</tr>
+<tr class="even">
+<td>Extramedullary blast proliferation</td>
+</tr>
+<tr class="odd">
+<td>Large foci or clusters of blasts in the bone marrow biopsy</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 ## Differential Diagnosis
 
-The majority of CML presents in the chronic phase, with markedly raised neutrophil count but possibly with few other features. Key differentials for chronic phase CML are therefore leucocytosis secondary to infection, inflammation, or malignancy:  inflammatory markers would be expected to be raised, in contrast to CML, and the Philadelphia chromosome absent. Chronic phase CML must also be differentiated from [[Chronic Myelomonocytic Leukaemia]] (CMML),  which is characterised by  an absolute monocytosis, trilineage myelodysplasia, and an absence of the Philadelphia chromosome. 
+The majority of CML presents in the chronic phase, with a markedly raised neutrophil count but possibly few other features. Key differentials for chronic phase CML are therefore leucocytosis secondary to infection, inflammation, or malignancy:  inflammatory markers would be expected to be raised, in contrast to CML, and the Philadelphia chromosome absent. Chronic phase CML must also be differentiated from [[Chronic Myelomonocytic Leukaemia]] (CMML),  which is characterised by  an absolute monocytosis, trilineage myelodysplasia, and an absence of the Philadelphia chromosome. 
 
 5% of CML cases present with predominant thrombocytosis: [[Essential Thrombocytosis]] must be excluded, usually by absent Philadelphia chromosome in affected cells. 
 
@@ -119,7 +142,7 @@ Hydroxyurea (aka hydroxycarbamide) may be used to treat severe leucocytosis.
 Allogeneic bone marrow transplant remains the only curative option, with complete bone marrow destruction and the graft-versus-leukaemia effect enabling removal of all malignant cells. It carries a high mortality however, so is used in poor prognosis patients with low transplant risk. 
 
 
-[^1] : Hochhaus, Andreas et al. "Long-Term Outcomes of Imatinib Treatment for Chronic Myeloid Leukemia". *New England Journal of Medicine* 376. 10(2017): 917-927. :[^1]
+[^1]: Hochhaus, Andreas et al. "Long-Term Outcomes of Imatinib Treatment for Chronic Myeloid Leukemia". *New England Journal of Medicine* 376. 10(2017): 917-927. :[^1]
 
 
 ## References

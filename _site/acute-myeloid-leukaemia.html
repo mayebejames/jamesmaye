@@ -11,18 +11,16 @@
   <!-- fetch the title & body fonts immediately to avoid re-rendering -->
 
   <link rel="preload" as="style"      href="/static/css/default.css" />
-  <link rel="preload" href="/static/font/ssfp/SourceSerifPro-BASIC-Bold.ttf"           as="font" type="font/ttf" crossorigin="anonymous">
   <link rel="preload" href="/static/font/ssfp/SourceSerifPro-BASIC-Regular.ttf"        as="font" type="font/ttf" crossorigin="anonymous">
   <link rel="preload" href="/static/font/ssfp/SourceSerifPro-BASIC-Semibold.ttf"       as="font" type="font/ttf" crossorigin="anonymous">
-  <link rel="preload" href="/static/font/ssfp/SourceSerifPro-BASIC-SemiboldItalic.ttf" as="font" type="font/ttf" crossorigin="anonymous">
   <link rel="preload" href="/static/font/ssfp/SourceSerifPro-BASIC-RegularItalic.ttf"  as="font" type="font/ttf" crossorigin="anonymous">
-  <link rel="preload" href="/static/font/ssfp/SourceSerifPro-BASIC-BoldItalic.ttf"     as="font" type="font/ttf" crossorigin="anonymous"> 
+
 <style>
   @font-face {
       font-family: 'Source Serif Pro';
       font-weight: 400;
       font-style: normal;
-      src: url('font/ssfp/SourceSerif4-Regular.ttf.woff') format('woff');
+      src: url('/font/ssfp/SourceSerif4-Regular.ttf.woff') format('woff');
       src: url('/static/font/ssfp/SourceSerifPro-BASIC-Regular.ttf') format('truetype');
       unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
       font-display: swap
@@ -31,7 +29,7 @@
       font-family: 'Source Serif Pro';
       font-weight: 400;
       font-style: italic;
-      src: url('font/ssfp/SourceSerif4-Regular.ttf.woff') format('woff');
+      src: url('/font/ssfp/SourceSerif4-It.ttf.woff') format('woff');
       src: url('/static/font/ssfp/SourceSerifPro-BASIC-RegularItalic.ttf') format('truetype');
       unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
       font-display: swap;
@@ -40,20 +38,12 @@
       font-family: 'Source Serif Pro';
       font-weight: 600;
       font-style: normal;
-      src: url('font/ssfp/SourceSerif4-It.ttf.woff') format('woff');
+      src: url('/font/ssfp/SourceSerif4-SemiboldIt.ttf.woff') format('woff');
       src: url('/static/font/ssfp/SourceSerifPro-BASIC-Semibold.ttf') format('truetype');
       unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
       font-display: swap
   }
-  @font-face {
-      font-family: 'Source Serif Pro';
-      font-weight: 700;
-      font-style: normal;
-      src: url('font/ssfp/SourceSerif4-SemiboldIt.ttf.woff') format('woff');
-      src: url('/static/font/ssfp/SourceSerifPro-BASIC-Bold.ttf') format('truetype');
-      unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
-      font-display: swap
-  }
+
 
   </style>
  
@@ -168,21 +158,18 @@
 <ul>
 <li>t(8;21) is particularly good and generally does not require bone marrow transplantation</li>
 </ul></li>
-<li><blockquote>
-<p>60y poorer prognosis</p>
-</blockquote></li>
+<li>&gt;60y poorer prognosis</li>
 <li>Response to first-round induction chemotherapy</li>
 </ul>
 <h2 id="management">Management</h2>
 <p>As with <span class="JM-link"><a href="acute-lymphoblastic-leukaemia">Acute Lymphoblastic Leukaemia</a></span>, management is characterised by induction combination chaemotherapy as an inpatient to remove the bulk of leukaemic cells and return normal bone marrow function. Consolidation therapy to remove any residual leukaemia cells is subsequently used. Unlike ALL, low-dose oral maintenance chemotherapy is not usually used subsequently.</p>
 <p>Bone marrow transplant may also be used. This consists of myeloablation, where cytotoxic radio and chemotherapy induces complete destruction of the bone marrow, and subsequent replacement of the bone marrow with transplant tissue. This produces a beneficial graft-vs-leukaemia effect, destroying additional leukaemia cells. This explains why non-twin tissue transplantation has a lower relapse rate.</p>
-<p>As CD33 is a transmembrane receptor generally specific to the myeloid lineage, anti-CD33 monoclonal antibodies have been trialled in AML. Their effect has so far been relatively underwhelming[^4], although future monoclonal antibodies may improve this.</p>
-<p>[^4] Jurcic (2012).</p>
+<p>As CD33 is a transmembrane receptor generally specific to the myeloid lineage, anti-CD33 monoclonal antibodies have been trialled in AML. Their effect has so far been relatively underwhelming<label for="4" class="margin-toggle sidenote-number"></label><input type="checkbox" id="4" class="margin-toggle"/><span class="sidenote">Jurcic (2012). </span>, although future monoclonal antibodies may improve this.</p>
 <h2 id="references">References</h2>
 <ul>
-<li>Rory M. Shallis, Rong Wang, Amy Davidoff, et al. Epidemiology of acute myeloid leukemia: Recent progress and enduring challenges. Blood Reviews 2019; 36:70-87c<a href="https://doi.org/10.1016/j.blre.2019.04.005">DOI: 10.1016/j.blre.2019.04.005</a>.</li>
+<li>Shallis RM, Wang R, Davidoff A, et al. Epidemiology of acute myeloid leukemia: Recent progress and enduring challenges. Blood Reviews 2019; 36:70-87c<a href="https://doi.org/10.1016/j.blre.2019.04.005">DOI: 10.1016/j.blre.2019.04.005</a>.</li>
 <li>P. Kalra. Essential Revision Notes for MRCP.4e. pp. 253-5.</li>
-<li>Joseph G Jurcic. What happened to anti-CD33 therapy for acute myeloid leukaemia? Curr Haematol Malig Rep 2012;7:65-73. <a href="https://doi.org/10.1007/s11899-011-0103-0">DOI: 10.1007/s11899-011-0103-0</a></li>
+<li>Jurcic JG. What happened to anti-CD33 therapy for acute myeloid leukaemia? Curr Haematol Malig Rep 2012;7:65-73. <a href="https://doi.org/10.1007/s11899-011-0103-0">DOI: 10.1007/s11899-011-0103-0</a></li>
 </ul>
 <!-- {BearID:D07DF2C5-2352-43F4-95E7-84FAD8D7C066-1211-000093A1AA718BA1} -->
 <section class="footnotes" role="doc-endnotes">

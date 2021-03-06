@@ -11,18 +11,16 @@
   <!-- fetch the title & body fonts immediately to avoid re-rendering -->
 
   <link rel="preload" as="style"      href="/static/css/default.css" />
-  <link rel="preload" href="/static/font/ssfp/SourceSerifPro-BASIC-Bold.ttf"           as="font" type="font/ttf" crossorigin="anonymous">
   <link rel="preload" href="/static/font/ssfp/SourceSerifPro-BASIC-Regular.ttf"        as="font" type="font/ttf" crossorigin="anonymous">
   <link rel="preload" href="/static/font/ssfp/SourceSerifPro-BASIC-Semibold.ttf"       as="font" type="font/ttf" crossorigin="anonymous">
-  <link rel="preload" href="/static/font/ssfp/SourceSerifPro-BASIC-SemiboldItalic.ttf" as="font" type="font/ttf" crossorigin="anonymous">
   <link rel="preload" href="/static/font/ssfp/SourceSerifPro-BASIC-RegularItalic.ttf"  as="font" type="font/ttf" crossorigin="anonymous">
-  <link rel="preload" href="/static/font/ssfp/SourceSerifPro-BASIC-BoldItalic.ttf"     as="font" type="font/ttf" crossorigin="anonymous"> 
+
 <style>
   @font-face {
       font-family: 'Source Serif Pro';
       font-weight: 400;
       font-style: normal;
-      src: url('font/ssfp/SourceSerif4-Regular.ttf.woff') format('woff');
+      src: url('/font/ssfp/SourceSerif4-Regular.ttf.woff') format('woff');
       src: url('/static/font/ssfp/SourceSerifPro-BASIC-Regular.ttf') format('truetype');
       unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
       font-display: swap
@@ -31,7 +29,7 @@
       font-family: 'Source Serif Pro';
       font-weight: 400;
       font-style: italic;
-      src: url('font/ssfp/SourceSerif4-Regular.ttf.woff') format('woff');
+      src: url('/font/ssfp/SourceSerif4-It.ttf.woff') format('woff');
       src: url('/static/font/ssfp/SourceSerifPro-BASIC-RegularItalic.ttf') format('truetype');
       unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
       font-display: swap;
@@ -40,20 +38,12 @@
       font-family: 'Source Serif Pro';
       font-weight: 600;
       font-style: normal;
-      src: url('font/ssfp/SourceSerif4-It.ttf.woff') format('woff');
+      src: url('/font/ssfp/SourceSerif4-SemiboldIt.ttf.woff') format('woff');
       src: url('/static/font/ssfp/SourceSerifPro-BASIC-Semibold.ttf') format('truetype');
       unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
       font-display: swap
   }
-  @font-face {
-      font-family: 'Source Serif Pro';
-      font-weight: 700;
-      font-style: normal;
-      src: url('font/ssfp/SourceSerif4-SemiboldIt.ttf.woff') format('woff');
-      src: url('/static/font/ssfp/SourceSerifPro-BASIC-Bold.ttf') format('truetype');
-      unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
-      font-display: swap
-  }
+
 
   </style>
  
@@ -131,7 +121,7 @@
 <p>The majority of pulmonary nodules found incidentally are monitored with repeat scanning and volumetric analysis in months-years, using the risk-stratification algorithms from the BTS guidelines (see <a href="#management">Management</a> below). Those at highest risk of malignancy using the <span class="JM-link"><a href="brock-model-estimates-the-cancer-risk-of-a-pulmonary-nodule">Brock Model estimates the cancer risk of a pulmonary nodule</a></span> may undergo PET-CT and further biopsy or excision.</p>
 <h2 id="pulmonary-nodules-on-ct">Pulmonary Nodules on CT</h2>
 <p>Nodules appear as contrast-enhancing lesions of up to 3cm diameter surrounded fully by lung parenchyma or pleura. They may be a purely Solid Nodule (A below), a Part-solid Nodule (B) or pure ground glass nodule (C). Part-solid nodules are at highest risk of malignancy. Further morphology can aid risk-stratification, with spiculating lesions or those tethering fissures, pleura, or vessels at higher risk of malignancy (<span class="JM-link"><a href="brock-model-estimates-the-cancer-risk-of-a-pulmonary-nodule/risk-factors">Brock Model estimates the cancer risk of a pulmonary nodule/Risk Factors</a></span>).</p>
-<p><img src="/static/img/pulmonary_nodule_ct.jpg" /> <em>(A) Solid Nodule: soft tissue density with sharply defined margins. (B) Part-solid nodule: has ground-glass density at its periphery but has a central component of soft tissue density. (C) Pure ground-glass nodule. From Au-Yong, 2020</em></p>
+<p><img src="bearimages/20ef794f-6000-4e27-92ea-9f8d682ab337-33765-0004d1392f986b67/f1.large.jpg" /> <em>(A) Solid Nodule: soft tissue density with sharply defined margins. (B) Part-solid nodule: has ground-glass density at its periphery but has a central component of soft tissue density. (C) Pure ground-glass nodule. From Au-Yong, 2020</em></p>
 <h2 id="causes-of-pulmonary-nodules">Causes of Pulmonary Nodules</h2>
 <p><em>From Au-Yong, 2020</em></p>
 <h3 id="malignant-causes">Malignant causes</h3>

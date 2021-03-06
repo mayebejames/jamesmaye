@@ -50,12 +50,15 @@ As the small bones of the hand and feet contain active red marrow during childho
 Anaemia is usually well tolerated in sickle cell disease. The oxygen dissociation curve for HbS is shifted to the right compared to HbA, meaning that oxygen is more easily deposited in the tissues. This means that packed red blood cell transfusion for anaemia is rarely required, except for in [[/Aplastic crisis]] or acute splenic sequestration.
 
 Management of acute sickle cell crises is usually conservative and symptomatic with analgesia for pain and wamth, hydration, and IV fluids to reduce the duration of vaso-occlusion. In severe cases exchange transfusion with non-HbS red blood cells is required. The major indications for exchange transfusion are:
+
 * Frequent severe sickle pain crises
 * Central nervous syndrome sickling ([[/Vaso-occlusive stroke]])
 * Priapism
 * [[/Acute chest syndrome]] not responsive to conservative management 
 
+
 Between acute presentations, sickle cell disease patients are prescribed folic acid supplements for chronic haemolytic anaemia. In severe cases, the cytotoxic agent hydroxyurea (AKA hydroxycarbamide)  is used to reduce the risk and severity of acute crises. It acts through a variety of mechanisms, including the induction of foetal haemoglobin as discussed above. It stimulates release of nitric oxide, improving pulmonary blood flow and reducing the risk of pulmonary hypertension. It reduces neutrophil and platelet counts, leading to decreased inflammatory stimulation of vaso-occlusion and thrombosis. Hydroxyurea has been shown to be efficatious and safe inpatients with a history of acute chest syndrome or symptomatic anaemia. Side effects include reversible bone marrow suppression, a small increased risk of cancer, and infertility.
+
 
 ## References
 * Essential Revision Notes for MRCP. 4e.*Kalra, P.* pp. 241-3, 432-3

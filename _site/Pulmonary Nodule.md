@@ -20,7 +20,7 @@ The majority of pulmonary nodules found incidentally are monitored with repeat s
 
 Nodules appear as contrast-enhancing lesions of up to 3cm diameter surrounded fully by lung parenchyma or pleura. They may be a purely Solid Nodule (A below), a Part-solid Nodule (B) or pure ground glass nodule (C). Part-solid nodules are at highest risk of malignancy. Further morphology can aid risk-stratification, with spiculating lesions or those tethering fissures, pleura, or vessels at higher risk of malignancy ([[Brock Model estimates the cancer risk of a pulmonary nodule/Risk Factors]]).
 
-![](/static/img/pulmonary_nodule_ct.jpg)
+![](BearImages/20EF794F-6000-4E27-92EA-9F8D682AB337-33765-0004D1392F986B67/F1.large.jpg)
 _(A) Solid Nodule: soft tissue density with sharply defined margins. (B) Part-solid nodule: has ground-glass density at its periphery but has a central component of soft tissue density. (C) Pure ground-glass nodule. From Au-Yong, 2020_
 
 

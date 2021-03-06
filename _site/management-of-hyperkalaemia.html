@@ -11,18 +11,16 @@
   <!-- fetch the title & body fonts immediately to avoid re-rendering -->
 
   <link rel="preload" as="style"      href="/static/css/default.css" />
-  <link rel="preload" href="/static/font/ssfp/SourceSerifPro-BASIC-Bold.ttf"           as="font" type="font/ttf" crossorigin="anonymous">
   <link rel="preload" href="/static/font/ssfp/SourceSerifPro-BASIC-Regular.ttf"        as="font" type="font/ttf" crossorigin="anonymous">
   <link rel="preload" href="/static/font/ssfp/SourceSerifPro-BASIC-Semibold.ttf"       as="font" type="font/ttf" crossorigin="anonymous">
-  <link rel="preload" href="/static/font/ssfp/SourceSerifPro-BASIC-SemiboldItalic.ttf" as="font" type="font/ttf" crossorigin="anonymous">
   <link rel="preload" href="/static/font/ssfp/SourceSerifPro-BASIC-RegularItalic.ttf"  as="font" type="font/ttf" crossorigin="anonymous">
-  <link rel="preload" href="/static/font/ssfp/SourceSerifPro-BASIC-BoldItalic.ttf"     as="font" type="font/ttf" crossorigin="anonymous"> 
+
 <style>
   @font-face {
       font-family: 'Source Serif Pro';
       font-weight: 400;
       font-style: normal;
-      src: url('font/ssfp/SourceSerif4-Regular.ttf.woff') format('woff');
+      src: url('/font/ssfp/SourceSerif4-Regular.ttf.woff') format('woff');
       src: url('/static/font/ssfp/SourceSerifPro-BASIC-Regular.ttf') format('truetype');
       unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
       font-display: swap
@@ -31,7 +29,7 @@
       font-family: 'Source Serif Pro';
       font-weight: 400;
       font-style: italic;
-      src: url('font/ssfp/SourceSerif4-Regular.ttf.woff') format('woff');
+      src: url('/font/ssfp/SourceSerif4-It.ttf.woff') format('woff');
       src: url('/static/font/ssfp/SourceSerifPro-BASIC-RegularItalic.ttf') format('truetype');
       unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
       font-display: swap;
@@ -40,20 +38,12 @@
       font-family: 'Source Serif Pro';
       font-weight: 600;
       font-style: normal;
-      src: url('font/ssfp/SourceSerif4-It.ttf.woff') format('woff');
+      src: url('/font/ssfp/SourceSerif4-SemiboldIt.ttf.woff') format('woff');
       src: url('/static/font/ssfp/SourceSerifPro-BASIC-Semibold.ttf') format('truetype');
       unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
       font-display: swap
   }
-  @font-face {
-      font-family: 'Source Serif Pro';
-      font-weight: 700;
-      font-style: normal;
-      src: url('font/ssfp/SourceSerif4-SemiboldIt.ttf.woff') format('woff');
-      src: url('/static/font/ssfp/SourceSerifPro-BASIC-Bold.ttf') format('truetype');
-      unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
-      font-display: swap
-  }
+
 
   </style>
  
@@ -127,49 +117,44 @@
          <div id="md-body">
     
 <h2 id="acute-management">Acute Management</h2>
-<table style="width:71%;">
-<colgroup>
-<col style="width: 22%" />
-<col style="width: 36%" />
-<col style="width: 12%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Mild Hyperkalaemia</td>
-<td style="text-align: left;">&lt;5.9 mmol/L, no major symptoms or ECG changes</td>
-<td style="text-align: left;">Oral</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Moderate Hyperkalaemia</td>
-<td style="text-align: left;">6.0–6.4 mmol/L with or without ECG changes</td>
-<td style="text-align: left;">Oral or IV</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Severe Hyperkalaemia</td>
-<td style="text-align: left;">&gt;6.5 mmol/L or major symptoms or ECG changes if &gt;5.9 mmol/L</td>
-<td style="text-align: left;">IV then oral</td>
-</tr>
-</tbody>
-</table>
 <ul>
+<li>Mild hyperkalaemia
+<ul>
+<li>&lt;5.9, no major symptoms or ECG changes</li>
 <li>Oral management
 <ul>
 <li>Calcium resonium 15g TDS/QDS (with 10ml BD lactulose) until K+ 5.5 mmol/L</li>
 </ul></li>
+</ul></li>
+<li>Moderate hyperkalaemia
+<ul>
+<li>6.0 - 6.4 with or without ECG changes</li>
+<li>Oral or IV management</li>
+</ul></li>
+<li>Severe hyperkalaemia
+<ul>
+<li><blockquote>
+<p>6.5 or &gt;5.9 with major symptoms or ECG changes</p>
+</blockquote></li>
 <li>IV management then oral management once stabilised
-<ol type="1">
-<li>Calcium gluconate 10% 30ml
+<ul>
+<li><ol type="1">
+<li>Calcium gluconate 10% 30ml</li>
+</ol>
 <ul>
 <li>Over 3-10 (30mins if on digoxin) mins into large vein with ECG telemetry by a doctor</li>
 <li>ECG after 10 mins - repeat bolus if not normalised</li>
 </ul></li>
-<li>Actrapid 10u in 100-125mls 20% glucose
+<li><ol start="2" type="1">
+<li>Actrapid 10u in 100-125mls 20% glucose</li>
+</ol>
 <ul>
 <li>Over 15-30 mins to temporarily lower levels, repeat if necessary</li>
 <li>Risk of hypoglycaemia - monitor BMs every 30 mins for 2 hrs then hourly until 6 hours - will require 10% glucose infusion if so</li>
 <li>Lasts 60 minutes - check VBG at 1, 2, 4, 6, 24 hrs</li>
 </ul></li>
-</ol></li>
+</ul></li>
+</ul></li>
 </ul>
 <p>If Hyperkalaemia is resistant to treatment discuss urgently with renal team as patient may require renal replacement therapy (<span class="JM-link"><a href="dialysis">Dialysis</a></span>)</p>
 <h2 id="symptoms-of-hyperkalaemia">Symptoms of Hyperkalaemia</h2>

@@ -1,0 +1,38 @@
+# Acute Coronary Syndrome
+
+## Backlinks
+* [[Medical index]]
+	* [[Acute Coronary Syndrome]]
+	[[Acute Kidney Injury]]
+	[[Alcohol withdrawal]]
+	[[Anaphylaxis]]
+	[[Asthma guidelines]]
+	[[Cardiac arrhythmias]]
+	[[Care and Support of the dying patient]]
+	[[COPD]]
+	[[Tinzaparin doses]]
+	[[Delirium]]
+	[[DKA in adults]]
+	[[Electrolytes (Pocket Guide)]]
+	[[Head injury, fall review]]
+	[[Heart failure]]
+	[[HHS - hyperosmolar hyperglycaemic State]]
+	[[Hyperglycaemia in ACS]]
+	[[Hyperglycaemia in stroke]]
+	[[Hypoglycaemia]]
+	[[IV fluids]]
+	[[Liver failure or decompensation]]
+	[[Massive haemorrhage]]
+	[[Mental Capacity Assessment (MCA)]]
+	[[Opioid overdose]]
+	[[Pain management (acute)]]
+	[[Pneumonia]]
+	[[Pneumothorax guidelines]]
+	[[Pulmonary embolism]]
+	[[Sepsis screening tool]]
+	[[Stroke (inpatient)]]
+	[[Subarachnoid Haemorrhage]]
+	[[Upper GI bleeding]]
+	[[VRIII Variable Rate Intravenous Insulin Infusion]]HJ
+
+<!-- {BearID:63907106-9EA4-40B7-AB72-15B2F8043D1B-46174-0000098D391C5B01} -->

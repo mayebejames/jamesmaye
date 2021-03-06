@@ -55,7 +55,7 @@ Acute monocytic leukaemia, AML M5, is characterised by morphological features of
 ## Prognostic factors
 * Particular [[Chromosome Abnormalities in Leukaemia]] 
 	*  t(8;21) is particularly good and generally does not require bone marrow transplantation
-* >60y poorer prognosis
+* \>60y poorer prognosis
 * Response to first-round induction chemotherapy
 
 ## Management 
@@ -71,12 +71,12 @@ As CD33 is a transmembrane receptor generally specific to the myeloid lineage, a
 
 [^3]: 5 year survival = 24%. From Shallis *et al.* (2019). :[^3]
 
-[^4] Jurcic (2012).
+[^4]: Jurcic (2012). :[^4]
 
 
 ## References
-* Rory M. Shallis, Rong Wang, Amy Davidoff, et al. Epidemiology of acute myeloid leukemia: Recent progress and enduring challenges. Blood Reviews 2019; 36:70-87c[DOI: 10.1016/j.blre.2019.04.005](https://doi.org/10.1016/j.blre.2019.04.005).
+* Shallis RM, Wang R, Davidoff A, et al. Epidemiology of acute myeloid leukemia: Recent progress and enduring challenges. Blood Reviews 2019; 36:70-87c[DOI: 10.1016/j.blre.2019.04.005](https://doi.org/10.1016/j.blre.2019.04.005).
 * P. Kalra. Essential Revision Notes for MRCP.4e. pp. 253-5.
-* Joseph G Jurcic. What happened to anti-CD33 therapy for acute myeloid leukaemia? Curr Haematol Malig Rep 2012;7:65-73. [DOI: 10.1007/s11899-011-0103-0](https://doi.org/10.1007/s11899-011-0103-0)
+* Jurcic JG. What happened to anti-CD33 therapy for acute myeloid leukaemia? Curr Haematol Malig Rep 2012;7:65-73. [DOI: 10.1007/s11899-011-0103-0](https://doi.org/10.1007/s11899-011-0103-0)
 
 <!-- {BearID:D07DF2C5-2352-43F4-95E7-84FAD8D7C066-1211-000093A1AA718BA1} -->

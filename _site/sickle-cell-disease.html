@@ -11,18 +11,16 @@
   <!-- fetch the title & body fonts immediately to avoid re-rendering -->
 
   <link rel="preload" as="style"      href="/static/css/default.css" />
-  <link rel="preload" href="/static/font/ssfp/SourceSerifPro-BASIC-Bold.ttf"           as="font" type="font/ttf" crossorigin="anonymous">
   <link rel="preload" href="/static/font/ssfp/SourceSerifPro-BASIC-Regular.ttf"        as="font" type="font/ttf" crossorigin="anonymous">
   <link rel="preload" href="/static/font/ssfp/SourceSerifPro-BASIC-Semibold.ttf"       as="font" type="font/ttf" crossorigin="anonymous">
-  <link rel="preload" href="/static/font/ssfp/SourceSerifPro-BASIC-SemiboldItalic.ttf" as="font" type="font/ttf" crossorigin="anonymous">
   <link rel="preload" href="/static/font/ssfp/SourceSerifPro-BASIC-RegularItalic.ttf"  as="font" type="font/ttf" crossorigin="anonymous">
-  <link rel="preload" href="/static/font/ssfp/SourceSerifPro-BASIC-BoldItalic.ttf"     as="font" type="font/ttf" crossorigin="anonymous"> 
+
 <style>
   @font-face {
       font-family: 'Source Serif Pro';
       font-weight: 400;
       font-style: normal;
-      src: url('font/ssfp/SourceSerif4-Regular.ttf.woff') format('woff');
+      src: url('/font/ssfp/SourceSerif4-Regular.ttf.woff') format('woff');
       src: url('/static/font/ssfp/SourceSerifPro-BASIC-Regular.ttf') format('truetype');
       unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
       font-display: swap
@@ -31,7 +29,7 @@
       font-family: 'Source Serif Pro';
       font-weight: 400;
       font-style: italic;
-      src: url('font/ssfp/SourceSerif4-Regular.ttf.woff') format('woff');
+      src: url('/font/ssfp/SourceSerif4-It.ttf.woff') format('woff');
       src: url('/static/font/ssfp/SourceSerifPro-BASIC-RegularItalic.ttf') format('truetype');
       unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
       font-display: swap;
@@ -40,20 +38,12 @@
       font-family: 'Source Serif Pro';
       font-weight: 600;
       font-style: normal;
-      src: url('font/ssfp/SourceSerif4-It.ttf.woff') format('woff');
+      src: url('/font/ssfp/SourceSerif4-SemiboldIt.ttf.woff') format('woff');
       src: url('/static/font/ssfp/SourceSerifPro-BASIC-Semibold.ttf') format('truetype');
       unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
       font-display: swap
   }
-  @font-face {
-      font-family: 'Source Serif Pro';
-      font-weight: 700;
-      font-style: normal;
-      src: url('font/ssfp/SourceSerif4-SemiboldIt.ttf.woff') format('woff');
-      src: url('/static/font/ssfp/SourceSerifPro-BASIC-Bold.ttf') format('truetype');
-      unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
-      font-display: swap
-  }
+
 
   </style>
  
@@ -150,7 +140,13 @@
 <p>As the small bones of the hand and feet contain active red marrow during childhood, they are at risk of infarction in children with sickle-cell disease. This manifests acutely with localised pain and swelling and can cause long-term deformity due to infarction.</p>
 <h2 id="management">Management</h2>
 <p>Anaemia is usually well tolerated in sickle cell disease. The oxygen dissociation curve for HbS is shifted to the right compared to HbA, meaning that oxygen is more easily deposited in the tissues. This means that packed red blood cell transfusion for anaemia is rarely required, except for in <a href="#aplastic-crisis">Aplastic crisis</a> or acute splenic sequestration.</p>
-<p>Management of acute sickle cell crises is usually conservative and symptomatic with analgesia for pain and wamth, hydration, and IV fluids to reduce the duration of vaso-occlusion. In severe cases exchange transfusion with non-HbS red blood cells is required. The major indications for exchange transfusion are: * Frequent severe sickle pain crises * Central nervous syndrome sickling (<a href="#vaso-occlusive-stroke">Vaso-occlusive stroke</a>) * Priapism * <a href="#acute-chest-syndrome">Acute chest syndrome</a> not responsive to conservative management</p>
+<p>Management of acute sickle cell crises is usually conservative and symptomatic with analgesia for pain and wamth, hydration, and IV fluids to reduce the duration of vaso-occlusion. In severe cases exchange transfusion with non-HbS red blood cells is required. The major indications for exchange transfusion are:</p>
+<ul>
+<li>Frequent severe sickle pain crises</li>
+<li>Central nervous syndrome sickling (<a href="#vaso-occlusive-stroke">Vaso-occlusive stroke</a>)</li>
+<li>Priapism</li>
+<li><a href="#acute-chest-syndrome">Acute chest syndrome</a> not responsive to conservative management</li>
+</ul>
 <p>Between acute presentations, sickle cell disease patients are prescribed folic acid supplements for chronic haemolytic anaemia. In severe cases, the cytotoxic agent hydroxyurea (AKA hydroxycarbamide) is used to reduce the risk and severity of acute crises. It acts through a variety of mechanisms, including the induction of foetal haemoglobin as discussed above. It stimulates release of nitric oxide, improving pulmonary blood flow and reducing the risk of pulmonary hypertension. It reduces neutrophil and platelet counts, leading to decreased inflammatory stimulation of vaso-occlusion and thrombosis. Hydroxyurea has been shown to be efficatious and safe inpatients with a history of acute chest syndrome or symptomatic anaemia. Side effects include reversible bone marrow suppression, a small increased risk of cancer, and infertility.</p>
 <h2 id="references">References</h2>
 <ul>
