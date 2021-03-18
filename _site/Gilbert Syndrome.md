@@ -5,7 +5,7 @@ description: Characterised by an otherwise asymptomatic jaundice during episodes
 created: 03/03/2021
 modified: 03/03/2021
 tags: [medicine, disease, surgery, eponymous, GI, HPB]
-status: In progress
+status: first draft
 url: gilbert-syndrome
 ---
 

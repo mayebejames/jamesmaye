@@ -13,7 +13,7 @@ url: index
 * [[Haematological Malignancy]]
 * [[Acute Lymphoblastic Leukaemia]]
 * [[Acute Myeloid Leukaemia]]
-* [[Chronic Lymphoblastic Leukaemia]]
+* [[Chronic Lymphocytic Leukaemia]]
 * [[Chronic Myeloid Leukaemia]]
 * [[Chromosome Abnormalities in Leukaemia]]
 
@@ -39,7 +39,7 @@ url: index
 * [[Haematological Malignancy]]
 * [[Acute Lymphoblastic Leukaemia]]
 * [[Acute Myeloid Leukaemia]]
-* [[Chronic Lymphoblastic Leukaemia]]
+* [[Chronic Lymphocytic Leukaemia]]
 * [[Chronic Myeloid Leukaemia]]
 * [[Chromosome Abnormalities in Leukaemia]]
 

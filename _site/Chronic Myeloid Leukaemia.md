@@ -5,11 +5,11 @@ description: CML is a haematological malignancy characterised by the BCR-ABL fus
 created: 27/02/2021
 modified: 27/02/2021
 tags: [medicine, haematology, disease, cancer, leukaemia]
-status: in progress
+status: first draft
 url: chronic-myeloid-leukaemia
 ---
 
-Chronic myeloid leukaemia (CML) is a myeloproliferative disorder and [[Haematological Malignancy]] arising from the myeloid lineage of haematopoietic stem cells. It is characterised by a marked increase in granulocytes (WCC up to 300 x10^9^) and the presence of the Philadelphia chromosome. It is a disease of middle age, usually presenting during the indolent chronic phase of the disease with hypercatabolic symptoms of fatigue, weight loss and sweating. Splenomegaly, a markedly raised white cell count and anaemia are hallmarks of the disease. The Philadelphia chromosome t(9;22) is seen in 95% of cases; the resultant BCR-ABL fusion protein is a potent tyrosine kinase, stimulating cell division. The tyrosine kinase inhibitor imatinib is the mainstay of chemotherapy; with it, more than 70%  of patients survive more than 5 years from diagnosis. Stem cell transplantation remains the only curative option. 
+Chronic myeloid leukaemia (CML) is a myeloproliferative disorder and [[Haematological Malignancy]] arising from the myeloid lineage of haematopoietic stem cells. It is characterised by a marked increase in granulocytes (WCC up to 300 × 10^9^) and the presence of the Philadelphia chromosome. It is a disease of middle age, usually presenting during the indolent chronic phase of the disease with hypercatabolic symptoms of fatigue, weight loss and sweating. Splenomegaly, a markedly raised white cell count and anaemia are hallmarks of the disease. The Philadelphia chromosome t(9;22) is seen in 95% of cases; the resultant BCR-ABL fusion protein is a potent tyrosine kinase, stimulating cell division. The tyrosine kinase inhibitor imatinib is the mainstay of chemotherapy; with it, more than 70%  of patients survive more than 5 years from diagnosis. Stem cell transplantation remains the only curative option. 
 
 
 ## Epidemiology
@@ -133,7 +133,7 @@ Due to the chronic nature of CML, chemotherapy alone is not curative. The aims o
 * Cytogenetic remission --  disappearance of Philadelphia chromosome from marrow cells
 * Molecular remission -- non-detection of BCR-ABL by rtPCR (3 log ↓)
 
-Imatinib is the first line treatment for newly diagnosed patients in the chronic phase. It is continued to failure, sub-optimal response to failure. Imatinib is a small molecule tyrosine kinase inhibitor which is partially-specific to the BCR-ABL fusion protein.  The IRIS trial[^1]  showed an 87% complete cytogenetic remission and 89% survival at 5 years. Common side effects of imatinib include myelosuppression,  oedema, nausea, rashes, cramps, fatigue, diarrhoea, headache, arthralgia, and abnormal LFTs.  Neutropenia secondary to myelosuppression is managed with G-CSF such as filgastrim or by reducing or suspending treatment. Platelet counts below 50 are managed with suspended or reduced treatment. 
+Imatinib is the first line treatment for newly diagnosed patients in the chronic phase. It is a small molecule tyrosine kinase inhibitor which is partially-specific to the BCR-ABL fusion protein.  The IRIS trial[^1]  showed an 87% complete cytogenetic remission and 89% survival at 5 years. Common side effects of imatinib include myelosuppression,  oedema, nausea, rashes, cramps, fatigue, diarrhoea, headache, arthralgia, and abnormal LFTs.  Neutropenia secondary to myelosuppression is managed with G-CSF such as filgastrim or by reducing or suspending treatment. Platelet counts below 50 are managed with suspended or reduced treatment. 
 
 Allopurinol is used to reduce the risk of gout. Patients in CML are predisposed to gout due to the high cellular turnover, producing an excess of purines which are then catabolised to urate. 
 

@@ -5,7 +5,7 @@ description: AML is a the commonest high-grade leukaemia in adults. It carries a
 created: 27/02/2021
 modified: 27/02/2021
 tags: [medicine, haematology, disease, cancer, leukaemia]
-status: Finished
+status: first draft
 url: acute-myeloid-leukaemia
 ---
 
@@ -67,7 +67,7 @@ As CD33 is a transmembrane receptor generally specific to the myeloid lineage, a
 
 [^1]: Monocytes include macrophages, osteoclasts and antigen-presenting cells such as dendritic cells, while granulocytes include neutrophils, eosinophils, basophils and mast cells. :[^1]
 
-[^2]: Normally <5% :[^1]
+[^2]: Normally <5% :[^2]
 
 [^3]: 5 year survival = 24%. From Shallis *et al.* (2019). :[^3]
 

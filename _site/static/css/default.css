@@ -100,11 +100,11 @@ main {
     
 }
 .marginnote, .sidenote{
-    width: 180px; /*calc(180px + ((100vw - 1070px) * 0.33));*/
+    width: 200px; /*calc(180px + ((100vw - 1070px) * 0.33));*/
     float: left;
     clear: left;
-    margin-left: -220px;
-    text-align: right; /*due to justify failing at small column size */
+    margin-left: -260px;
+    text-align: left; /*due to justify failing at small column size */
    
 }
 .marginnote:nth-of-type(even), .sidenote:nth-of-type(even) {
@@ -112,7 +112,7 @@ main {
     float: right;
     clear: right;
     margin-left: 0;
-    margin-right: -220px;
+    margin-right: -260px;
     text-align: left;
 }
 
@@ -183,8 +183,8 @@ main {
         width: 180px; /*calc(180px + ((100vw - 1070px) * 0.33));*/
         float: left;
         clear: left;
-        margin-left: max(-220px, calc(((1070px - 100vw) * 0.33) - (180px + 20px)));
-        text-align: right; /*due to justify failing at small column size */
+        margin-left: max(-240px, calc(((1070px - 100vw) * 0.33) - (180px + 20px)));
+        
        
     }
     .marginnote:nth-of-type(even), .sidenote:nth-of-type(even) {
@@ -192,9 +192,23 @@ main {
         float: right;
         clear: right;
         margin-left: 0;
-        margin-right: max(-220px, calc(((1070px - 100vw) * 0.33) - (180px + 20px)));
+        margin-right: max(-240px, calc(((1070px - 100vw) * 0.33) - (180px + 20px)));
         text-align: left;
     }
+    
+}
+
+/*bigger sidenotes + margins on e.g. 13inch macbooks*/
+@media only screen and (min-width: 1260px) { 
+    .marginnote, .sidenote {
+        width: 200px;
+        margin-left: -260px;
+    }
+    
+    .marginnote:nth-of-type(even), .sidenote:nth-of-type(even) {
+        margin-right: -260px;
+    }
+    
     
 }
 
@@ -572,9 +586,20 @@ input[type="checkbox"] {
 /***********/
 
 .index ul {
-    column-count: 2;
-    column-gap: 2em;
+    padding-left: 0;
     margin-left: 0.5rem;
     list-style: none;
+}
+
+.index li {
+    margin-bottom: 0.7em;
+    line-height: 1.2;
+}
+
+@media only screen and (min-width: 700px) {
+    .index ul {
+        column-count: 2;
+        column-gap: 2em;
+    }
 }
 

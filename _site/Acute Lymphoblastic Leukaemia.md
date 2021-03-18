@@ -5,7 +5,7 @@ description: ALL is the commonest form of cancer in children, with a cure rate o
 created: 27/02/2021
 modified: 27/02/2021
 tags: [medicine, haematology, disease, cancer, leukaemia]
-status: Finished
+status: first draft
 url: acute-lymphoblastic-leukaemia
 ---
 

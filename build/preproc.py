@@ -214,7 +214,7 @@ def create_tag_pages(target_directory, tags_dict):
     
     for tag, pages_list in tags_dict.items(): #i.e. for k,v in dict
         # .items() is required to iterate through dict containing list
-        YAML_text = "---\ntitle: Tag:{}\n---\n\n## Articles\n\n".format(tag)
+        YAML_text = "---\ntitle:{}\n---\n\n## Articles\n\n".format(tag)
         tag_page  = "{}.md".format(tag)
         body_text = ""
         for page in pages_list:

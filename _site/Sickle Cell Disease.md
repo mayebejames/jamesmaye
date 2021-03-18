@@ -5,7 +5,7 @@ description: An autosomal recessive disease causing polymerisation of haemoglobi
 created: 20/02/2021
 modified: 27/02/2021
 tags: [medicine, haematology, disease]
-status: In progress
+status: first draft
 url: sickle-cell-disease
 ---
 
